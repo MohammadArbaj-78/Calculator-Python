@@ -1,0 +1,303 @@
+[33mcommit d914889c5085943f13e840d80c2e87029ee4b4fe[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Mohammad arbaj <arbajmansuri82@gmail.com>
+Date:   Sun Oct 19 15:33:03 2025 +0530
+
+    print hello agggg
+
+[1mdiff --git a/pyy.py b/pyy.py[m
+[1mindex 7d9b710..fe4d11d 100644[m
+[1m--- a/pyy.py[m
+[1m+++ b/pyy.py[m
+[36m@@ -1,3 +1,4 @@[m
+ print("hello")[m
+ print("hellos")[m
+[32m+[m[32mprint("he")[m
+ print("he")[m
+\ No newline at end of file[m
+
+[33mcommit 39111a60366860b71859b0cf2fb78c562c7e974a[m
+Author: Mohammad arbaj <arbajmansuri82@gmail.com>
+Date:   Sun Oct 19 15:32:04 2025 +0530
+
+    print hello ag
+
+[1mdiff --git a/pyy.py b/pyy.py[m
+[1mindex fcc2fad..7d9b710 100644[m
+[1m--- a/pyy.py[m
+[1m+++ b/pyy.py[m
+[36m@@ -1,2 +1,3 @@[m
+ print("hello")[m
+[31m-print("hello")[m
+\ No newline at end of file[m
+[32m+[m[32mprint("hellos")[m
+[32m+[m[32mprint("he")[m
+\ No newline at end of file[m
+
+[33mcommit 5c3ad331102c43e6239433fa56f453a8ab645fc7[m
+Author: Mohammad arbaj <arbajmansuri82@gmail.com>
+Date:   Sun Oct 19 15:27:37 2025 +0530
+
+    print hello again
+
+[1mdiff --git a/pyy.py b/pyy.py[m
+[1mindex ce47b77..fcc2fad 100644[m
+[1m--- a/pyy.py[m
+[1m+++ b/pyy.py[m
+[36m@@ -1 +1,2 @@[m
+[32m+[m[32mprint("hello")[m
+ print("hello")[m
+\ No newline at end of file[m
+
+[33mcommit 0d8fd4b9e0178ff619fd5a25bc11ce118d0d3130[m
+Author: Mohammad arbaj <arbajmansuri82@gmail.com>
+Date:   Sun Oct 19 15:25:16 2025 +0530
+
+    print hello
+
+[1mdiff --git a/pyy.py b/pyy.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ce47b77[m
+[1m--- /dev/null[m
+[1m+++ b/pyy.py[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mprint("hello")[m
+\ No newline at end of file[m
+
+[33mcommit a2f772d5ccb461c3aa81af103189f0887a22ebb3[m
+Author: Mohammad arbaj <arbajmansuri82@gmail.com>
+Date:   Sun Oct 19 15:14:19 2025 +0530
+
+    Added new Python file
+
+[1mdiff --git a/Calculator.py b/Calculator.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aea1fa8[m
+[1m--- /dev/null[m
+[1m+++ b/Calculator.py[m
+[36m@@ -0,0 +1,43 @@[m
+[32m+[m
+[32m+[m[32m# eval used calculater[m
+[32m+[m[32m# but eval are dengours[m
+[32m+[m
+[32m+[m[32m'''def calc():[m
+[32m+[m[32m    b=input('Calculat :')[m
+[32m+[m[32m    d=eval(b)[m
+[32m+[m[32m    # eval convert string to real code expression[m
+[32m+[m[32m    print(d)[m
+[32m+[m
+[32m+[m[32mcalc()[m
+[32m+[m[32m'''[m
+[32m+[m
+[32m+[m[32m# function use on calculator[m
+[32m+[m
+[32m+[m[32mdef calcu():[m
+[32m+[m[32m    a=int(input('enter first number :'))[m
+[32m+[m[32m    b=int(input('enter second number :'))[m
+[32m+[m[32m    print('choose opretion number')[m
+[32m+[m[32m    print('1. addition')[m
+[32m+[m[32m    print('2. subtraction')[m
+[32m+[m[32m    print('3. multiplication')[m
+[32m+[m[32m    print('4. division')[m
+[32m+[m[32m    print('5. floor division')[m
+[32m+[m[32m    print('6. exponential')[m
+[32m+[m[41m    [m
+[32m+[m[32m    x=int(input('enter operation number'))[m
+[32m+[m[41m    [m
+[32m+[m[32m    match x:[m
+[32m+[m[32m     case 1:[m[41m  [m
+[32m+[m[32m      return a+b[m
+[32m+[m[32m     case 2:[m[41m  [m
+[32m+[m[32m      return a-b[m
+[32m+[m[32m     case 3:[m[41m  [m
+[32m+[m[32m      return a*b[m
+[32m+[m[32m     case 4:[m[41m  [m
+[32m+[m[32m      return a/b[m
+[32m+[m[32m     case 5:[m[41m  [m
+[32m+[m[32m      return a//b[m
+[32m+[m[32m     case 6:[m[41m  [m
+[32m+[m[32m      return a**b[m
+[32m+[m
+[32m+[m[32mprint(calcu())[m
+[1mdiff --git a/Dice roller.py b/Dice roller.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..769e0bd[m
+[1m--- /dev/null[m
+[1m+++ b/Dice roller.py[m	
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m
+[32m+[m[32mimport random                   # Using random module[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfor i in range(10):             # for loop use to new dice roll[m
+[32m+[m[32m  a=input('play dice roller .')           # take user input[m
+[32m+[m[32m  if(a.lower()=='yes'):                   # user input compair to yes[m
+[32m+[m[32m    print('Dice roll...')[m
+[32m+[m[32m    b=random.randint(1,6)                 # assign in b random value by randint function[m
+[32m+[m[32m    print('Result :',b)                   # and print dice result[m
+[32m+[m[32m  else:[m
+[32m+[m[32m    print('ok exit..')                    # in else part for exit use break statement[m
+[32m+[m[32m    break[m
+\ No newline at end of file[m
+[1mdiff --git a/Passaword generater.py b/Passaword generater.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..38a2ecd[m
+[1m--- /dev/null[m
+[1m+++ b/Passaword generater.py[m	
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m
+[32m+[m[32mimport random[m
+[32m+[m
+[32m+[m[32mprint('Are you generate  password')[m
+[32m+[m
+[32m+[m[32ma=input()[m
+[32m+[m[32mdef pg():[m
+[32m+[m
+[32m+[m[32m if(a.lower()=='yes' or a.lower()=='onemore'):[m
+[32m+[m[32m        print('Ok your password are Generated')[m
+[32m+[m[32m        c=random.choice(['ad86@F!A$D','H@g64Dr3%O','DF@f54#e!E','PG#r42$!G*','B2s5!g#h&9'])[m
+[32m+[m[32m        print('your password :',c)[m
+[32m+[m
+[32m+[m[32mpg()[m
+[32m+[m[32mfor i in range(5):[m
+[32m+[m[32m    e=input('for next password type "onemore" and to out of cod type "exit"')[m
+[32m+[m[32m    if(e.lower()=='onemore'):[m
+[32m+[m[32m          pg()[m
+[32m+[m[32m    elif(e.lower()=='exit'):[m
+[32m+[m[32m          print('Ok exit')[m
+[32m+[m[32m          break[m
+\ No newline at end of file[m
+[1mdiff --git a/Quiz game.py b/Quiz game.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..18da83e[m
+[1m--- /dev/null[m
+[1m+++ b/Quiz game.py[m	
+[36m@@ -0,0 +1,19 @@[m
+[32m+[m
+[32m+[m[32mlist={'1. what is your name':'arbaj','2. why from':'manawar','3. what is your age':'21','4. what is your country':'india'}[m
+[32m+[m[32mdef quiz():[m
+[32m+[m[32m    score=0[m
+[32m+[m[32m    print('Lets start game')[m
+[32m+[m[32m    for i,j in list.items():[m
+[32m+[m[32m        print(i)[m
+[32m+[m[32m        a=input('enter answer')[m
+[32m+[m[32m        if(a.lower()==j):[m
+[32m+[m[32m            print('write answer')[m
+[32m+[m[32m            score+=1[m
+[32m+[m[32m        else:[m
+[32m+[m[32m            print('wrong answer')[m
+[32m+[m[41m    [m
+[32m+[m[32m    print('your score :',score)[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m
+[32m+[m[32mquiz()[m
+\ No newline at end of file[m
+[1mdiff --git a/Rock,paper,scissors.py b/Rock,paper,scissors.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..875e6fc[m
+[1m--- /dev/null[m
+[1m+++ b/Rock,paper,scissors.py[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m
+[32m+[m[32mimport random              # random module for random values[m
+[32m+[m
+[32m+[m[32mprint('Are you ready to rock,paper,scissors ')[m[41m  [m
+[32m+[m
+[32m+[m[32ma=input()[m[41m                      [m
+[32m+[m[32mif(a.lower()=='ready'):           # use of if statement for compair ready[m
+[32m+[m[32m    print('Game start')[m
+[32m+[m[32m    print('ROCK PAPER SCISSORS !')[m
+[32m+[m[32m    for i in range(5):            # for loop to iterate cod within loop[m[41m [m
+[32m+[m[32m     e=input()[m
+[32m+[m[32m     c=random.choice(['Rock','Paper','Scissors'])  # use of random function choic to random value[m
+[32m+[m[32m     if(c==e.title()):                             # in if statement compair c to e.title function means string first latter capital[m
+[32m+[m[32m      print(f'User :{e} - computer :{c}')[m
+[32m+[m[32m      print('Match drow !')[m
+[32m+[m[32m     elif(c=='Rock' and e.title()=='Scissors'):    # two condition compair by and keyword[m
+[32m+[m[32m       print(f'User :{e} - computer :{c}')[m
+[32m+[m[32m       print('computer are winner')[m[41m [m
+[32m+[m[32m     elif(c=='Paper' and e.title()=='Rock'):       # two condition compair by and keyword[m
+[32m+[m[32m       print(f'User :{e} - computer :{c}')[m
+[32m+[m[32m       print('computer are winner')[m
+[32m+[m[32m     elif(c=='Scissors' and e.title()=='Paper'):   # two condition compair by and keyword[m
+[32m+[m[32m       print(f'User :{e} - computer :{c}')[m
+[32m+[m[32m       print('computer are winner')[m
+[32m+[m[32m     elif(e.lower()=='exit'):                         # e.lower means lower value compair to exit[m
+[32m+[m[32m       print('Ok exit !')[m
+[32m+[m[32m       break                                          # breaK statement use to out of loop[m
+[32m+[m[32m     else:[m
+[32m+[m[32m       print(f'User :{e} - computer :{c}')[m
+[32m+[m[32m       print('Congretulation User are winner !')[m
+[32m+[m[32melse:[m
+[32m+[m[32m    print('Ok exit !')                                 # print exit[m
+\ No newline at end of file[m
+[1mdiff --git a/To do list.py b/To do list.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..de72eea[m
+[1m--- /dev/null[m
+[1m+++ b/To do list.py[m	
+[36m@@ -0,0 +1,30 @@[m
+[32m+[m
+[32m+[m[32mprint('your to do list !')[m
+[32m+[m
+[32m+[m[32mlist=['python','namaz','mamulat','ilm','home'][m
+[32m+[m
+[32m+[m[32mm=0[m
+[32m+[m[32mfor i in list:[m
+[32m+[m[32m    m+=1[m
+[32m+[m[32m    print(m,'.',i)[m
+[32m+[m
+[32m+[m[32mfor i in range(5):[m
+[32m+[m[32m  n=0[m
+[32m+[m[32m  t=input('Whats your need...')[m
+[32m+[m
+[32m+[m[32m  if(t.lower()=='add'):[m
+[32m+[m[32m    ts=input('Ok--enter your task...')[m
+[32m+[m[32m    for i in ts:[m
+[32m+[m[32m      list.append(i)[m
+[32m+[m[32m    print('your task added succesfully...')[m
+[32m+[m[32m  elif(t.lower()=='remove'):[m
+[32m+[m[32m    ts=input('Ok--enter remove task...')[m
+[32m+[m[32m    list.remove(ts)[m
+[32m+[m[32m    print('your task remove succesfully...')[m
+[32m+[m[32m  elif(t.lower()=='view'):[m
+[32m+[m[32m    for i in list:[m
+[32m+[m[32m      n+=1[m
+[32m+[m[32m      print(n,'.',i)[m
+[32m+[m[32m  else:[m
+[32m+[m[32m    print('Ok exit to do list')[m
+[32m+[m[32m    break[m
+\ No newline at end of file[m
+[1mdiff --git a/number gausing game.py b/number gausing game.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9fc87a1[m
+[1m--- /dev/null[m
+[1m+++ b/number gausing game.py[m	
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m
+[32m+[m[32mimport random         # import random module take random number[m[41m [m
+[32m+[m
+[32m+[m[32mprint('I am thinking random number')[m
+[32m+[m[32mprint('Are you Gauss number')[m
+[32m+[m[32mprint('your chance only 10')[m
+[32m+[m[32mprint('Ok...')[m
+[32m+[m
+[32m+[m[32ma=random.randint(1,100)     # raindom number 1 to 100 by random function 'ramdint'[m
+[32m+[m[41m                                                   [m
+[32m+[m[32mfor i in range(10):          # for loop for range 10[m[41m     [m
+[32m+[m[32m  b=input('gauss  and enter number in 1 to 100 :')[m
+[32m+[m[32m  if(b.lower()=='exit'):           # using if statement and compair exit to lower input value[m
+[32m+[m[32m      # this cod exit not work with space in type on terminal[m
+[32m+[m[32m      print('Right answer :',a)[m
+[32m+[m[32m      break                       # brake statement to jamp out of loop[m
+[32m+[m[32m  elif not b.isdigit():           # in elif statement to chek isdigit() means digit value is equal no[m
+[32m+[m[32m     raise('enter value invalid please enter number 1 to 100')     # reasing costom error[m
+[32m+[m[32m     break                        # brake statement to jamp out of loop[m
+[32m+[m[32m  elif(int(b)==a):                # b convert in int and compair to a[m
+[32m+[m[32m    print('are you gauss',a)[m
+[32m+[m[32m    print('your answer is write')[m
+[32m+[m[32m    print('congretulation !!')[m[41m       [m
+[32m+[m[32m    break                         # brake statement to jamp out of loop[m
+[32m+[m[32m  else:[m
+[32m+[m[32m    print('your answer is wrong') # last print else statement in loop[m
+\ No newline at end of file[m
