@@ -1,5 +1,5 @@
 
-# Create a bank class perform operations
+# Create a bank class perform operations.
 
 class bank:                                   # Create bank class
     def __init__(self):                       #  Class bank constructer
