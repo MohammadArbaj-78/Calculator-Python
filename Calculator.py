@@ -2,14 +2,14 @@
 # eval used calculater
 # but eval are dengours
 
-'''def calc():
+def calc():
     b=input('Calculat :')
     d=eval(b)
     # eval convert string to real code expression
     print(d)
 
 calc()
-'''
+
 
 # function use on calculator
 
