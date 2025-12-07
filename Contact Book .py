@@ -13,35 +13,37 @@ import json
 #     print(file_data)
 #     print(file_data.items())
 
-print('Contact Book\n')
+for i in range(100):
+   
+  print('Contact Book\n') 
 
-print('1. Add contact')
+  print('1. Add contact')
 
-print('2. Delet contact')
+  print('2. Delet contact')
 
-print('3. Update contact')
+  print('3. Update contact')
+ 
+  print('4. Search contact')
 
-print('4. Search contact')
+  print('5. View all contact\n')
 
-print('5. View all contact\n')
+  option=int(input('Choose Option ....'))
 
-option=int(input('Choose Option ....'))
-
-if(option==1):
+  if(option==1):
     contact_name=input('Enter contact name :')
     contact_number=input('Enter contact number :')
-    with open("C:\Python\pydroid\My projects\contact data.json")as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json")as f:
         data=json.load(f)
     new_data={'name':contact_name,'number':contact_number}
     data.append(new_data)
-    with open("C:\Python\pydroid\My projects\contact data.json",'w')as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json",'w')as f:
         json.dump(data,f,indent=4)
         print('Add Succesfully')
 
-elif(option==2):
+  elif(option==2):
     contact_name=input('Enter contact name :')
     # contact_number=input('Enter contact number :')
-    with open("C:\Python\pydroid\My projects\contact data.json")as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json")as f:
         data=json.load(f)
         for item in data:
             print(item)
@@ -49,14 +51,14 @@ elif(option==2):
                 data.remove(item)
                 print('Delet Succesfully')
                 break
-    with open("C:\Python\pydroid\My projects\contact data.json",'w')as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json",'w')as f:
         json.dump(data,f,indent=4)
         print('Confirm')
 
-elif(option==3):
+  elif(option==3):
     contact_name=input('Enter contact name :')
     contact_number=input('Enter contact number :')
-    with open("C:\Python\pydroid\My projects\contact data.json")as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json")as f:
         data=json.load(f)
         for item in data:
             print(item)
@@ -68,12 +70,12 @@ elif(option==3):
                 print('Update Succesfully')
                 break
     data=[{'name':contact_name,'number':contact_number}]
-    with open("C:\Python\pydroid\My projects\contact data.json",'w')as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json",'w')as f:
         json.dump(data,f,indent=4)
 
-if(option==4):
+  elif(option==4):
     contact_name=input('Enter contact name :')
-    with open("C:\Python\pydroid\My projects\contact data.json")as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json")as f:
         data=json.load(f)
         
         for item in data:
@@ -83,16 +85,18 @@ if(option==4):
             else:
                 print('dont match contact')
                 break
-    with open("C:\Python\pydroid\My projects\contact data.json",'w')as f:
+    with open(r"C:\Python\pydroid\My projects\contact data.json",'w')as f:
         json.dump(data,f,indent=4)
-        print('Add Succesfully')
+        print(' Succesfully')
 
-if(option==5):
-    with open("C:\Python\pydroid\My projects\contact data.json")as f:
+  elif(option==5):
+    with open(r"C:\Python\pydroid\My projects\contact data.json")as f:
         data=json.load(f)
         print(data)
         for item in data:
             print(item)
-
+  else:
+     print('exit')
+     break
 
 
